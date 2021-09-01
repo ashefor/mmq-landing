@@ -1,0 +1,192 @@
+@import '../abstract/variables';
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media all and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &--grey {
+    background-color: #F3F3F3;
+  }
+
+  &--white {
+    background-color: $color-white;
+  }
+
+  &-title {
+    // font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: inherit;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 50px;
+      font-size: 35px;
+    }
+  }
+
+  &-paragraph {
+    // font-weight: 500;
+    font-weight: inherit;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    line-height: 3.5rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    @media all and (min-width: 768px) {
+      &:not(:last-of-type) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+
+.badge {
+  &--secondary {
+    color: $color-black;
+    font-size: 13px;
+    border-radius: 15px !important;
+    background: #F6FEE4;
+    border: 1px solid $color-secondary !important;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: .8rem 2.5rem;
+  }
+}
+
+.hero {
+  min-height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  background-color: $color-white;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center;
+
+  @media all and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 700px;
+    align-items: center;
+  }
+
+  &.loans-hero {
+    background-image: url('/assets/images/loans-hero-bg.webp'), linear-gradient(#00000082, #00000082);
+  }
+
+  &.investments-hero {
+    background-image: url('/assets/images/child-investment.webp'), linear-gradient(#00000082, #00000082);
+  }
+
+  &.company-hero {
+    background-image: url('/assets/images/company-bg.webp'), linear-gradient(#00000082, #00000082);
+  }
+
+  &.leadership-hero {
+    background-image: url('/assets/images/leadership-bg.webp'), linear-gradient(#00000082, #00000082);
+  }
+
+  &.contact-hero {
+    background-image: url('/assets/images/contact-bg.webp'), linear-gradient(#00000082, #00000082);
+  }
+
+  &_title {
+    font-size: 37.5px;
+    font-weight: 700;
+    margin-bottom: 70px;
+
+    @media all and (min-width: 768px) {
+      font-size: 50px;
+    }
+  }
+
+  // &>* {
+  //   margin-top: 3rem;
+  // }
+
+  a {
+    width: fit-content;
+  }
+}
+
+.grid {
+  &-row {
+    display: grid;
+    grid-template: 1fr/1fr;
+    
+    @media all and (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+    &--double {
+      grid-template-rows: repeat(2, minmax(100px, 1fr));
+    }
+    }
+  }
+
+  &-card {
+    background: $color-secondary;
+    background: conic-gradient(from 270deg at 100% 100%, #AEC233 0deg, rgba(174, 194, 51, 0.569512) 154.98deg, rgba(174, 194, 51, 0) 360deg);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    @media all and (min-width: 768px) {
+      padding: 6rem;
+    }
+    // justify-content: center;
+  }
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #f9f9f9 !important;
+}
+
+.border-top {
+  border-top: 1px solid #f9f9f9 !important;
+}
+
+.border {
+  border: 1px solid rgb(0 0 0 / .1) !important;
+}
+
+.radius {
+  border-radius: 1rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bg {
+  &--success {
+    background-color: $color-green !important;
+  }
+
+  &--danger {
+    background-color: $color-danger !important;
+  }
+
+  &--dark {
+    background-color: $color-primary !important;
+  }
+}

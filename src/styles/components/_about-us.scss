@@ -1,0 +1,16 @@
+.directors {
+    &-avatar {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 2rem;
+        background: #ccc;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

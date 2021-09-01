@@ -1,0 +1,238 @@
+<div class="landing">
+  <div class="hero">
+    <div class="container-xxl">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 me-auto">
+          <div class="d-flex flex-column">
+            <h1 class="hero_title">
+              What would you like to do today?
+            </h1>
+            <a href="" class="button button--rounded button--link button--lg button--wider mb-5">
+              <span class="me-4 text--medium text--600">Invest your money</span>
+              <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.2237 7.95475L9.77397 0.306543C9.69376 0.248231 9.59142 0.215576 9.48355 0.215576H7.0357C6.83102 0.215576 6.73698 0.430165 6.89187 0.542124L16.5782 7.63287H0.391929C0.270228 7.63287 0.170654 7.71684 0.170654 7.81947V9.21896C0.170654 9.32159 0.270228 9.40555 0.391929 9.40555H16.5754L6.8891 16.4963C6.73421 16.6106 6.82825 16.8228 7.03293 16.8228H9.56376C9.61631 16.8228 9.66887 16.8065 9.70759 16.7762L20.2237 9.08367C20.3194 9.01346 20.3962 8.92673 20.4488 8.82936C20.5014 8.73198 20.5286 8.62622 20.5286 8.51921C20.5286 8.4122 20.5014 8.30644 20.4488 8.20907C20.3962 8.11169 20.3194 8.02497 20.2237 7.95475Z"
+                  fill="white" />
+              </svg>
+
+            </a>
+            <a href="https://apply.moneymarqueng.com/application/start" target="_blank" rel="noreferrer"
+              class="button button--rounded button--secondary button--lg button--wider">
+              <span class="me-4 text--medium text--600">Get a loan</span>
+              <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.2237 7.95475L9.77397 0.306543C9.69376 0.248231 9.59142 0.215576 9.48355 0.215576H7.0357C6.83102 0.215576 6.73698 0.430165 6.89187 0.542124L16.5782 7.63287H0.391929C0.270228 7.63287 0.170654 7.71684 0.170654 7.81947V9.21896C0.170654 9.32159 0.270228 9.40555 0.391929 9.40555H16.5754L6.8891 16.4963C6.73421 16.6106 6.82825 16.8228 7.03293 16.8228H9.56376C9.61631 16.8228 9.66887 16.8065 9.70759 16.7762L20.2237 9.08367C20.3194 9.01346 20.3962 8.92673 20.4488 8.82936C20.5014 8.73198 20.5286 8.62622 20.5286 8.51921C20.5286 8.4122 20.5014 8.30644 20.4488 8.20907C20.3962 8.11169 20.3194 8.02497 20.2237 7.95475Z"
+                  fill="white" />
+              </svg>
+
+            </a>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-12 col-md-6">
+          <img src="assets/images/banknote.webp" loading="lazy" class="w-100 h-100" alt="Bank Note Illustration">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section--white">
+    <div class="loan-calculator container-xxl">
+      <div class="row">
+        <div class="col-12 col-md-5 me-auto mb-5 mb-md-0">
+          <h2 class="loan-calculator-title mb-5 mb-md-2">
+            Focus on things that matter to you
+          </h2>
+          <p class="loan-calculator-text">
+            Apply for a convenient loan to meet needs like growing your small business, renovating your home, buying a
+            new car, paying rent, school fees, medical bills, etc
+          </p>
+          <div class="d-flex justify-content-between mt-5">
+            <ul class="loan-calculator_lists">
+              <li>
+                Flexible loan tenures
+              </li>
+              <li>
+                Competitive rates
+              </li>
+              <li>
+                No guarantor required
+              </li>
+            </ul>
+            <ul class="loan-calculator_lists">
+              <li>
+                No hidden fees.
+              </li>
+              <li>
+                No collateral required
+              </li>
+              <li>
+                Get money in 24 hours
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="loan-calculator_card">
+            <form class="loan-calculator_form">
+              <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label for="" class="form-label text--medium text--500">How much do you want to borrow ?</label>
+                  <span class="text--semi-small text--ash text--500">Min ₦1,000,000</span>
+                </div>
+                <input min="50000" max="1500000" type="number" [value]="loanAmount"
+                  class="form-control form-control-lg loan-calculator-input text--medium">
+              </div>
+              <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text--semi-small text--ash text--500">₦50,000</span>
+                  <span class="text--regular-alt text--primary text--500">{{loanAmount | currency:'₦'}}</span>
+                  <span class="text--semi-small text--ash text--500">₦1,500,000</span>
+                </div>
+                <input [style.background]="inputStyle" (input)="calcLoan($event)" id="myinput" min="50000" max="1500000"
+                  type="range" [value]="loanAmount" />
+              </div>
+              <div class="mb-5">
+                <h6 class="loan-calculator-subtitle text--500 text--capital mb-4">
+                  Loan Tenure
+                </h6>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <input [value]="12" (change)="updateSelectedLoanTenures(12, $event)" class="d-none" type="radio"
+                      name="loanTenures" id="firstTenure">
+                    <label [ngClass]="{'button--primary': loanTenures.has(12)}"
+                      class="button--sm text--capital badge--secondary" for="firstTenure">
+                      12 Months
+                    </label>
+                  </div>
+                  <div>
+                    <input [value]="6" (change)="updateSelectedLoanTenures(6, $event)" class="d-none" type="radio"
+                      name="loanTenures" id="secondTenure">
+                    <label [ngClass]="{'button--primary': loanTenures.has(6)}"
+                      class="button--sm text--capital badge--secondary" for="secondTenure">
+                      6 Months
+                    </label>
+                  </div>
+                  <div>
+                    <input [value]="3" (change)="updateSelectedLoanTenures(3, $event)" class="d-none" type="radio"
+                      name="loanTenures" id="thirdTenure">
+                    <label [ngClass]="{'button--primary': loanTenures.has(3)}"
+                      class="button--sm text--capital badge--secondary" for="thirdTenure">
+                      3 Months
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <h6 class="loan-calculator-subtitle text--500 text--capital mb-4">
+                  Reason for Loan
+                </h6>
+                <div class="d-flex align-items-center justify-content-between mb-5">
+                  <div>
+                    <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(1, $event)" [value]="1"
+                      id="carType">
+                    <label [ngClass]="{'button--primary': loanReasons.has(1)}"
+                      class="button--sm text--capital badge--secondary" for="carType">
+                      Car
+                    </label>
+                  </div>
+                  <div>
+                    <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(2, $event)" [value]="2"
+                      id="weddingType">
+                    <label [ngClass]="{'button--primary': loanReasons.has(2)}"
+                      class="button--sm text--capital badge--secondary" for="weddingType">
+                      wedding
+                    </label>
+                  </div>
+                  <div>
+                    <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(3, $event)" [value]="3"
+                      id="schoolType">
+                    <label [ngClass]="{'button--primary': loanReasons.has(3)}"
+                      class="button--sm text--capital badge--secondary" for="schoolType">
+                      school fees
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(4, $event)" [value]="4"
+                      id="rennovationType">
+                    <label [ngClass]="{'button--primary': loanReasons.has(4)}"
+                      class="button--sm text--capital badge--secondary" for="rennovationType">
+                      rennovation
+                    </label>
+                  </div>
+                  <div>
+                    <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(5, $event)" [value]="5"
+                      id="rentType">
+                    <label [ngClass]="{'button--primary': loanReasons.has(5)}"
+                      class="button--sm text--capital badge--secondary" for="rentType">
+                      rent
+                    </label>
+                  </div>
+                  <div>
+                    <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(6, $event)" [value]="6"
+                      id="hospitalType">
+                    <label [ngClass]="{'button--primary': loanReasons.has(6)}"
+                      class="button--sm text--capital badge--secondary" for="hospitalType">
+                      hospital bills
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="text--danger text--regular mb-2 text--center">
+                  Your Monthly Repayment
+                </p>
+                <p class="loan-calculator-amount">
+                  {{monthlyPayment| currency: 'NGN'}}
+                </p>
+                <button type="button" class="button button--primary button--wide button--lg mb-3">
+                  apply now
+                </button>
+                <p class="text--semi-small text--grey text--center">
+                  The offer above is an initial estimate , based on the information you have provided. Your final offer
+                  will be calculated based on the product you select and your financial profile
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section--white">
+    <div class="container-xxl instructions">
+      <h2 class="instructions-title">
+        How it works
+      </h2>
+      <div class="row gx-5">
+        <div class="col-12 col-md-4 instructions-step">
+          <div class="instructions-step-number">
+            1
+          </div>
+          <h3 class="instructions-step-title">Apply</h3>
+          <p class="instructions-step-text">
+            Choose your loan amount & tenure then share some information about yourself
+          </p>
+        </div>
+        <div class="col-12 col-md-4 instructions-step">
+          <div class="instructions-step-number">
+            2
+          </div>
+          <h3 class="instructions-step-title">Verify</h3>
+          <p class="instructions-step-text">
+            Verify the information that you’ve provided
+          </p>
+        </div>
+        <div class="col-12 col-md-4 instructions-step">
+          <div class="instructions-step-number">
+            3
+          </div>
+          <h3 class="instructions-step-title text--capital">receive loan</h3>
+          <p class="instructions-step-text">
+            Get money in your bank account within 24 hours if your loan is approved
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

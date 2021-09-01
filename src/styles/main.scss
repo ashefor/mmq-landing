@@ -1,0 +1,27 @@
+/*user defined styles*/
+
+
+@import "abstract/variables";
+
+@import "base/base";
+
+@import "base/typography";
+
+@import "components/button";
+// @import "components/container";
+// @import "components/form";
+// @import "components/scrollbar";
+// @import "components/page";
+@import "components/table";
+// @import "components/card";
+@import "components/input";
+@import "components/custom";
+@import "components/page";
+@import "components/header";
+@import "components/footer";
+@import "components/landing";
+@import "components/loans";
+@import "components/about-us";
+
+
+@import "~bootstrap/scss/bootstrap";

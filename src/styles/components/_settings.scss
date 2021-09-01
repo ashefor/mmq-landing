@@ -1,0 +1,39 @@
+.settings {
+    &-link {
+        background-color: $color-white;
+        border: 1px solid rgba($color: $color-primary, $alpha: 0.35);
+        border-radius: 10px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 1rem;
+
+        @media all and (min-width: 768px) {
+            margin-bottom: 2rem;
+        }
+
+        @media all and (min-width: 992px) {
+            margin-bottom: 2rem;
+        }
+
+        &-text {
+            color: $color-primary;
+            font-size: $font-size-regular-alt;
+        }
+    }
+
+    .active-link {
+        background-color: $color-primary;
+
+        svg {
+            path {
+                fill: $color-white;
+            }
+        }
+
+        .settings-link-text{
+            color: $color-white;
+        }
+    }
+}

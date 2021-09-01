@@ -1,0 +1,65 @@
+.footer {
+ &--top {
+    background-color: #818080;
+    padding: 25px 0 25px 0;
+
+    @media all and (min-width: 768px) {
+    padding: 90px 0 120px 0;
+    }
+ }
+
+  &_nav {
+    &_title {
+      font-style: normal;
+      font-weight: 600;
+      display: block;
+      font-size: 22px;
+      margin-bottom: 1rem;
+      color: $color-secondary;
+      text-transform: capitalize;
+
+      @media all and (min-width: 768px) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &_menu {
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      display: block;
+
+      &_item {
+        display: block;
+        text-align: left;
+
+        @media all and (min-width: 768px) {
+            &:not(:last-of-type) {
+                margin-bottom: 15px;
+              }
+        }
+      }
+
+      &_link, &_text {
+        color: $color-white;
+        display: block;
+        font-size: 16px;
+        padding: 15px 0;
+        text-decoration: none;
+      }
+    }
+
+    a {
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+  }
+
+  &--bottom {
+      padding: 25px;
+      text-align: center;
+      background-color: $color-secondary;
+      font-size: 20px;
+  }
+}

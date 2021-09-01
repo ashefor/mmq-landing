@@ -1,0 +1,51 @@
+@import '../abstract/variables';
+@import "~bootstrap/scss/functions";
+
+@import "~bootstrap/scss/variables";
+
+$body-bg: rgba(196, 196, 196, 0.2);
+$secondary: #AEC233;
+$primary: #252A58;
+$input-bg: #F1F1F1;
+$input-height-lg: 50px;
+$border-radius-lg : 0px;
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+);
+
+$custom-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+// @import "~ng-zorro-antd/select/style/index.min.css";
+// input,
+// textarea {
+//   border-radius: 5px !important;
+// }
+
+// nz-select {
+//   width: 100%;
+
+//   nz-select-top-control {
+//     border-radius: 5px !important;
+//   }
+// }
+
+// nz-date-picker {
+//   border-radius: 5px !important;
+// }
+

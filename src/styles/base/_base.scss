@@ -1,0 +1,70 @@
+/*basic reset*/
+// @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import '../abstract/variables';
+
+html {
+  font-size: 62.5%;
+}
+
+*, :after, :before {
+  --transition-duration: 250ms;
+}
+
+// ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+body {
+  // font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Rubik', sans-serif !important;
+  box-sizing: border-box;
+  font-style: normal;
+  // background-color: $color-white !important;
+  line-height: 1.2;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  border-image: none;
+  outline: none;
+  background: transparent;
+  font-size: $font-size-regular;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html,
+body {
+  // background-color: $app-background;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+
+.isDisabled {
+  pointer-events: none;
+  opacity: .7;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+

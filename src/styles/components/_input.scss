@@ -1,0 +1,31 @@
+@import '../abstract/variables';
+
+input {
+  border:  1px solid #B8B8B8;
+  border-radius: 5px;
+
+  &:enabled:hover {
+    border-color: #5a5a5a !important;
+  }
+
+  &:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.1rem #919090;
+    border-color: rgba(90, 90, 90, .5);
+  }
+}
+
+#myinput {
+  background: linear-gradient(to right, $color-primary 0%, $color-primary 3%, #F6FEE4 3%, #F6FEE4 100%);
+  border: 1px solid #AEC233 !important;
+  border-radius: 8px;
+  height: 8px;
+  width: 100%;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+
+
