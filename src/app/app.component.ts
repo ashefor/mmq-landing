@@ -3,7 +3,8 @@ import { filter, map, mergeMap, tap } from 'rxjs/operators';
 import { Router, ActivatedRoute, NavigationEnd, Data } from '@angular/router';
 import * as bootstrap from 'bootstrap';
 import { MetaService } from './core/meta.service';
-// declare const bootstrap: any;
+
+declare const gtag: Function;
 
 @Component({
   selector: 'app-root',
@@ -38,6 +39,13 @@ export class AppComponent implements OnInit {
           this.metaService.updateTitle(title);
           this.metaService.updateDescription(description);
         })
-      ).subscribe();
+      ).subscribe((event: any) => {
+        gtag('config', 'G-DPHW0YV19P',
+          {
+            page_path: event.urlAfterRedirects
+          }
+        );
+      });
   }
+
 }
