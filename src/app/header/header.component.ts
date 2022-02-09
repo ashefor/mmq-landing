@@ -11,7 +11,9 @@ export class HeaderComponent implements OnInit {
   constructor(router: Router) {
     router.events.subscribe((event: any) => {
       if (event instanceof NavigationStart) {
-        this.navToggler.nativeElement.click();
+        if (window.outerWidth < 992) {
+          this.navToggler.nativeElement.click();
+        }
       }
     })
    }
