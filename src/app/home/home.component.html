@@ -129,7 +129,7 @@
                     <input [value]="12" (change)="updateSelectedLoanTenures(12, $event)" class="d-none" type="radio"
                       name="loanTenures" id="firstTenure">
                     <label [ngClass]="{'button--primary': loanTenures.has(12)}"
-                      class="button--sm text--capital badge--secondary" for="firstTenure">
+                      class="button--sm text--capital badge--secondary pointer" for="firstTenure">
                       12 Months
                     </label>
                   </div>
@@ -137,7 +137,7 @@
                     <input [value]="6" (change)="updateSelectedLoanTenures(6, $event)" class="d-none" type="radio"
                       name="loanTenures" id="secondTenure">
                     <label [ngClass]="{'button--primary': loanTenures.has(6)}"
-                      class="button--sm text--capital badge--secondary" for="secondTenure">
+                      class="button--sm text--capital badge--secondary pointer" for="secondTenure">
                       6 Months
                     </label>
                   </div>
@@ -145,7 +145,7 @@
                     <input [value]="3" (change)="updateSelectedLoanTenures(3, $event)" class="d-none" type="radio"
                       name="loanTenures" id="thirdTenure">
                     <label [ngClass]="{'button--primary': loanTenures.has(3)}"
-                      class="button--sm text--capital badge--secondary" for="thirdTenure">
+                      class="button--sm text--capital badge--secondary pointer" for="thirdTenure">
                       3 Months
                     </label>
                   </div>
@@ -160,7 +160,7 @@
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(1, $event)" [value]="1"
                       id="carType">
                     <label [ngClass]="{'button--primary': loanReasons.has(1)}"
-                      class="button--sm text--capital badge--secondary" for="carType">
+                      class="button--sm text--capital badge--secondary pointer" for="carType">
                       Car
                     </label>
                   </div>
@@ -168,7 +168,7 @@
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(2, $event)" [value]="2"
                       id="weddingType">
                     <label [ngClass]="{'button--primary': loanReasons.has(2)}"
-                      class="button--sm text--capital badge--secondary" for="weddingType">
+                      class="button--sm text--capital badge--secondary pointer" for="weddingType">
                       wedding
                     </label>
                   </div>
@@ -176,7 +176,7 @@
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(3, $event)" [value]="3"
                       id="schoolType">
                     <label [ngClass]="{'button--primary': loanReasons.has(3)}"
-                      class="button--sm text--capital badge--secondary" for="schoolType">
+                      class="button--sm text--capital badge--secondary pointer" for="schoolType">
                       school fees
                     </label>
                   </div>
@@ -186,7 +186,7 @@
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(4, $event)" [value]="4"
                       id="rennovationType">
                     <label [ngClass]="{'button--primary': loanReasons.has(4)}"
-                      class="button--sm text--capital badge--secondary" for="rennovationType">
+                      class="button--sm text--capital badge--secondary pointer" for="rennovationType">
                       rennovation
                     </label>
                   </div>
@@ -194,7 +194,7 @@
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(5, $event)" [value]="5"
                       id="rentType">
                     <label [ngClass]="{'button--primary': loanReasons.has(5)}"
-                      class="button--sm text--capital badge--secondary" for="rentType">
+                      class="button--sm text--capital badge--secondary pointer" for="rentType">
                       rent
                     </label>
                   </div>
@@ -202,7 +202,7 @@
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(6, $event)" [value]="6"
                       id="hospitalType">
                     <label [ngClass]="{'button--primary': loanReasons.has(6)}"
-                      class="button--sm text--capital badge--secondary" for="hospitalType">
+                      class="button--sm text--capital badge--secondary pointer" for="hospitalType">
                       hospital bills
                     </label>
                   </div>
