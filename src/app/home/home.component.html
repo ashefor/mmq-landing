@@ -1,7 +1,7 @@
 <div class="landing">
   <div class="hero landing-hero">
     <div class="hero-content">
-     <div class="container-xxl flex-column d-flex">
+     <div class="container-xxl px-3 px-lg-5 flex-column d-flex">
       <h1 class="hero_title">
         Welcome! What would you like to do today?
       </h1>
@@ -26,7 +26,7 @@
       </a>
      </div>
     </div>
-    <!-- <div class="container-xxl">
+    <!-- <div class="container-xxl px-3 px-lg-5">
       <div class="row align-items-center">
         <div class="col-12 col-md-5 me-auto">
          
@@ -38,16 +38,16 @@
     </div> -->
   </div>
   <div class="section section--white">
-    <div class="loan-calculator container-xxl">
+    <div class="loan-calculator container-xxl px-3 px-lg-5">
       <div class="row">
-        <div class="col-12 col-md-6 me-auto mb-5 mb-md-0">
+        <div class="col-12 col-md-7 col-lg-6 me-auto mb-5 mb-md-0">
           <h2 class="loan-calculator-title mb-5 mb-md-2">
             We are all about bringing stress-free financial solutions closer to you 
           </h2>
           <p class="loan-calculator-text">
             Have a look at our offers
           </p>
-          <div class="row g-md-5 justify-content-between mt-4">
+          <div class="row g-2 g-md-3 g-xl-5 justify-content-between mt-4">
             <div class="col-12 col-md-6 mb-4 mb-md-1">
               <div class="card h-100 shadow border-0">
                 <div class="card-body d-flex flex-column">
@@ -124,8 +124,8 @@
                 <h6 class="loan-calculator-subtitle text--500 text--capital mb-4">
                   Loan Tenure
                 </h6>
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="">
+                <div class="row gx-2 align-items-center justify-content-between">
+                  <div class="col-4">
                     <input [value]="12" (change)="updateSelectedLoanTenures(12, $event)" class="d-none" type="radio"
                       name="loanTenures" id="firstTenure">
                     <label [ngClass]="{'button--primary': loanTenures.has(12)}"
@@ -133,7 +133,7 @@
                       12 Months
                     </label>
                   </div>
-                  <div>
+                  <div class="col-4">
                     <input [value]="6" (change)="updateSelectedLoanTenures(6, $event)" class="d-none" type="radio"
                       name="loanTenures" id="secondTenure">
                     <label [ngClass]="{'button--primary': loanTenures.has(6)}"
@@ -141,7 +141,7 @@
                       6 Months
                     </label>
                   </div>
-                  <div>
+                  <div class="col-4">
                     <input [value]="3" (change)="updateSelectedLoanTenures(3, $event)" class="d-none" type="radio"
                       name="loanTenures" id="thirdTenure">
                     <label [ngClass]="{'button--primary': loanTenures.has(3)}"
@@ -155,8 +155,8 @@
                 <h6 class="loan-calculator-subtitle text--500 text--capital mb-4">
                   Reason for Loan
                 </h6>
-                <div class="d-flex align-items-center justify-content-between mb-5">
-                  <div>
+                <div class="row gx-2 align-items-center justify-content-between mb-5">
+                  <div class="col-4">
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(1, $event)" [value]="1"
                       id="carType">
                     <label [ngClass]="{'button--primary': loanReasons.has(1)}"
@@ -164,7 +164,7 @@
                       Car
                     </label>
                   </div>
-                  <div>
+                  <div class="col-4">
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(2, $event)" [value]="2"
                       id="weddingType">
                     <label [ngClass]="{'button--primary': loanReasons.has(2)}"
@@ -172,7 +172,7 @@
                       wedding
                     </label>
                   </div>
-                  <div>
+                  <div class="col-4">
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(3, $event)" [value]="3"
                       id="schoolType">
                     <label [ngClass]="{'button--primary': loanReasons.has(3)}"
@@ -181,8 +181,8 @@
                     </label>
                   </div>
                 </div>
-                <div class="d-flex align-items-center justify-content-between">
-                  <div>
+                <div class="row gx-2 align-items-center justify-content-between">
+                  <div class="col-4">
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(4, $event)" [value]="4"
                       id="rennovationType">
                     <label [ngClass]="{'button--primary': loanReasons.has(4)}"
@@ -190,7 +190,7 @@
                       rennovation
                     </label>
                   </div>
-                  <div>
+                  <div class="col-4">
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(5, $event)" [value]="5"
                       id="rentType">
                     <label [ngClass]="{'button--primary': loanReasons.has(5)}"
@@ -198,7 +198,7 @@
                       rent
                     </label>
                   </div>
-                  <div>
+                  <div class="col-4">
                     <input class="d-none" type="checkbox" (change)="updateSelectedLoanReasons(6, $event)" [value]="6"
                       id="hospitalType">
                     <label [ngClass]="{'button--primary': loanReasons.has(6)}"

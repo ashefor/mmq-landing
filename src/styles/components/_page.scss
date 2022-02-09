@@ -59,7 +59,14 @@
     border: 1px solid $color-secondary !important;
     box-sizing: border-box;
     border-radius: 15px;
-    padding: .8rem 2.5rem;
+    padding: .8rem 0.5rem;
+    width: 100%;
+    text-align: center;
+
+    // @media all and (min-width: 768px) {
+    //   padding: .8rem 2.5rem;
+    // }
+
   }
 }
 

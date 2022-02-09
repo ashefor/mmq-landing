@@ -3,8 +3,8 @@
     background-color: #818080;
     padding: 25px 0 25px 0;
 
-    @media all and (min-width: 768px) {
-    padding: 90px 0 120px 0;
+    @media all and (min-width: 992px) {
+    padding: 50px 0 70px 0;
     }
  }
 
@@ -35,7 +35,7 @@
 
         @media all and (min-width: 768px) {
             &:not(:last-of-type) {
-                margin-bottom: 15px;
+                margin-bottom: 2px;
               }
         }
       }
@@ -44,7 +44,7 @@
         color: $color-white;
         display: block;
         font-size: 16px;
-        padding: 15px 0;
+        padding: 5px 0;
         text-decoration: none;
       }
     }
